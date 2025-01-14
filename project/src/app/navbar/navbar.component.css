@@ -1,0 +1,65 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links to opposite sides */
+    align-items: center; /* Vertically centers items */
+    background: linear-gradient(to right, pink, lightblue);
+    padding: 10px 20px;
+  }
+  
+  /* Logo section */
+  .logo {
+    display: flex;
+    align-items: center; 
+    /* Vertically centers the text and logo */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust size of the logo */
+    margin-right: 10px; /* Add spacing between logo and text */
+    border-radius: 20px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+  }
+  
+  /* Navbar links */
+  .nav-links {
+    display: flex;
+    align-items: center; /* Vertically centers links and buttons */
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: purple; /* Normal state */
+  }
+  
+  .nav-links a:hover {
+    color: blue; /* Hover effect */
+  }
+  
+  .nav-links a:active {
+    color: green; /* Active state */
+  }
+  
+  .nav-links button {
+    margin: 0 15px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links button:first-of-type {
+    background: orange; /* Signup button */
+  }
+  
+  .nav-links button:last-of-type {
+    background: transparent;
+    border: 1px solid blue; /* Login button */
+  }
+  

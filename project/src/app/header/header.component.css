@@ -1,0 +1,33 @@
+.heading {
+    font-family: 'Poppins', sans-serif; /* Replace with your preferred font */
+    font-size: 2em;
+    text-align: center;
+    color: #333; /* Default color for the text */
+    margin-top: 20px;
+  }
+  
+  .heading .highlight {
+    color: #3341ff; /* Bright color for highlight */
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 2px solid #da89c5; /* Adds a solid border */
+    padding: 5px 10px; /* Adds spacing around the text */
+    border-radius: 20px; /* Rounded edges for a modern look */
+    background-color: #fff5e6; /* Light background for contrast */
+    box-shadow: 2px 2px 8px rgba(255, 87, 51, 0.5); /* Soft shadow for emphasis */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .heading .highlight:hover {
+    background-color: #f833ff;
+    color: #fff; 
+    box-shadow: 4px 4px 12px rgba(255, 87, 51, 0.8);
+  }
+  
+
+ 
+  .card-img-top {
+    height: 220px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
