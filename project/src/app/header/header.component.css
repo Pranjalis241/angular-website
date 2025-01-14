@@ -20,7 +20,7 @@
   }
   
   .heading .highlight:hover {
-    background-color: #f833ff;
+    background-color:rgb(78, 108, 245);
     color: #fff; 
     box-shadow: 4px 4px 12px rgba(255, 87, 51, 0.8);
   }
@@ -38,7 +38,7 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: #fcf2f7;
+    background: rgb(255, 204, 211);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 

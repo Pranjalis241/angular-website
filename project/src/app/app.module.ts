@@ -9,6 +9,7 @@ import { RegformComponent } from './regform/regform.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
+import { PopcoursesComponent } from './popcourses/popcourses.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     RegformComponent,
     ContactComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    PopcoursesComponent
   ],
   imports: [
     BrowserModule,
