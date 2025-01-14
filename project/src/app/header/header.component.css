@@ -7,22 +7,25 @@
   }
   
   .heading .highlight {
-    color: #3341ff; /* Bright color for highlight */
+    /* Bright color for highlight */
     font-weight: bold;
     font-size: 1.5em;
     text-transform: uppercase;
     border: 2px solid #da89c5; /* Adds a solid border */
     padding: 5px 10px; /* Adds spacing around the text */
     border-radius: 20px; /* Rounded edges for a modern look */
-    background-color: #fff5e6; /* Light background for contrast */
-    box-shadow: 2px 2px 8px rgba(255, 87, 51, 0.5); /* Soft shadow for emphasis */
+   
+  
     transition: all 0.3s ease-in-out;
+      background-color:rgb(78, 108, 245);
+    color: #fff; 
+    box-shadow: 4px 4px 12px rgba(255, 87, 51, 0.8);
   }
   
   .heading .highlight:hover {
-    background-color:rgb(78, 108, 245);
-    color: #fff; 
-    box-shadow: 4px 4px 12px rgba(255, 87, 51, 0.8);
+    background-color: #fff5e6;
+    color: #3341ff;
+    box-shadow: 2px 2px 8px rgba(255, 87, 51, 0.5);
   }
   
 

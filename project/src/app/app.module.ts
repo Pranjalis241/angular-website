@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { PopcoursesComponent } from './popcourses/popcourses.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PopcoursesComponent } from './popcourses/popcourses.component';
     ContactComponent,
     NavbarComponent,
     HeaderComponent,
-    PopcoursesComponent
+    PopcoursesComponent,
+    ReviewsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
