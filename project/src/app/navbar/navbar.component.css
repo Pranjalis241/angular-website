@@ -3,8 +3,10 @@
     display: flex;
     justify-content: space-between; /* Pushes logo and links to opposite sides */
     align-items: center; /* Vertically centers items */
-    background: linear-gradient(to right, pink, lightblue);
+    /* background: linear-gradient(to right, pink, lightblue);  */
+    background: linear-gradient(to right, pink,rgb(164, 227, 248)); 
     padding: 10px 20px;
+    box-shadow: 4px 4px 12px rgba(78, 74, 74, 0.8);
   }
   
   /* Logo section */

@@ -1,5 +1,11 @@
+.quote-image {
+  width: 50px; /* Adjust image size */
+  height: auto;
+  margin: 0 10px; /* Add spacing between the images and the review box */
+  position: relative;
+  top: -70px; /* Moves the image upward */
+}
 
-  
   .review-container {
     width: 100%;
     max-width: 800px;
@@ -11,12 +17,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: relative;
+   
   }
   
   .reviews {
     display: flex;
     flex-direction: column;
-    animation: scroll 22s linear infinite;
+    animation: scroll 32s linear infinite;
   }
   
   .review {

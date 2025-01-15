@@ -3,9 +3,12 @@
     font-size: 2em;
     text-align: center;
     color: #333; /* Default color for the text */
-    margin-top: 20px;
+    margin-top: 10px;
   }
-  
+  .back{
+   
+    background: linear-gradient(to right, pink, rgb(164, 227, 248));
+  }
   .heading .highlight {
     /* Bright color for highlight */
     font-weight: bold;
@@ -17,7 +20,7 @@
    
   
     transition: all 0.3s ease-in-out;
-      background-color:rgb(78, 108, 245);
+    background-color:rgb(78, 108, 245);
     color: #fff; 
     box-shadow: 4px 4px 12px rgba(255, 87, 51, 0.8);
   }
@@ -42,6 +45,7 @@
     margin: 50px auto;
     padding: 20px;
     background: rgb(255, 204, 211);
+    background: #fdd5e6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 
