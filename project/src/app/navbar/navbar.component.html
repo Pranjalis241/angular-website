@@ -5,16 +5,34 @@
     </div>
     <div class="nav-links">
       <a routerLink="/home">Home</a>
-      <a routerLink="/courses">Courses</a>
+
+  <!-- Courses Button with Dropdown -->
+  <div class="dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Courses
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+      <li><a class="dropdown-item" routerLink="/courses/web-development">Web Development</a></li>
+      <li><a class="dropdown-item" routerLink="/courses/cloud-computing">Cloud Computing</a></li>
+      <li class="dropdown-submenu">
+        <a class="dropdown-item" href="#">JavaScript Frameworks</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/courses/js-framework/angular">Angular</a></li>
+          <li><a class="dropdown-item" routerLink="/courses/js-framework/nodejs">Node.js</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+      <!-- <a routerLink="/courses">Courses</a> -->
       <a routerLink="/regform">Register Now</a>
       <a routerLink="/contact">Contact Us</a>
-      <button>Signup</button>
-      <button>Login</button>
+      <button routerLink="/signup">Signup</button> <!-- Navigate to Sign Up -->
+      <button routerLink="/login">Login</button> <!-- Navigate to Login -->
+
     </div>
   </nav>
-  <div>
-    <router-outlet></router-outlet>
-  </div>
+ 
   
 
 
