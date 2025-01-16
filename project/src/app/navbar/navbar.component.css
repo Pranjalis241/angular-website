@@ -1,67 +1,48 @@
-/* Navbar container */
 .navbar {
-    display: flex;
-    justify-content: space-between; /* Pushes logo and links to opposite sides */
-    align-items: center; /* Vertically centers items */
-    /* background: linear-gradient(to right, pink, lightblue);  */
-    background: linear-gradient(to right, pink,rgb(164, 227, 248)); 
-    padding: 10px 20px;
-    box-shadow: 4px 4px 12px rgba(78, 74, 74, 0.8);
-  }
-  
-  /* Logo section */
-  .logo {
-    display: flex;
-    align-items: center; 
-    /* Vertically centers the text and logo */
-  }
-  
-  .logo img {
-    height: 40px; /* Adjust size of the logo */
-    margin-right: 10px; /* Add spacing between logo and text */
-    border-radius: 20px;
-  }
-  
-  .logo span {
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-  }
-  
-  /* Navbar links */
-  .nav-links {
-    display: flex;
-    align-items: center; /* Vertically centers links and buttons */
-  }
-  
-  .nav-links a {
-    margin: 0 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: purple; /* Normal state */
-  }
-  
-  .nav-links a:hover {
-    color: blue; /* Hover effect */
-  }
-  
-  .nav-links a:active {
-    color: green; /* Active state */
-  }
-  
-  .nav-links button {
-    margin: 0 15px;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .nav-links button:first-of-type {
-    background: orange; /* Signup button */
-  }
-  
-  .nav-links button:last-of-type {
-    background: transparent;
-    border: 1px solid blue; /* Login button */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, rgb(247, 206, 213), rgb(202, 235, 247));
+  padding: 10px 20px;
+  box-shadow: 4px 4px 12px rgba(78, 74, 74, 0.8);
+}
+
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.navbar-nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: purple;
+}
+
+.navbar-nav a:hover {
+  color: blue;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav button {
+  margin: 0 15px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Optional: Adjust the navbar background */
+.navbar-light {
+  background: linear-gradient(61deg, rgba(255, 203, 215, 1) 10%, rgba(214, 255, 239, 1) 100%);
+}
+
+.btn:hover {
+  background-color: #6e0369 !important; /* Change background color on hover */
+  color: white !important; /* Change text color on hover */
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+}
+

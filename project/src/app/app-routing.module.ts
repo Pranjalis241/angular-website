@@ -7,6 +7,7 @@ import { RegformComponent } from './regform/regform.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
   { path: 'home', component: HomeComponent },
@@ -14,7 +15,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'regform', component: RegformComponent },
   { path: 'signup', component: SignupComponent }, // Route for Sign Up
-  { path: 'login', component: LoginComponent }, 
+  { path: 'login', component: LoginComponent },
+
+
   // { path: '**', redirectTo: '/home' } 
 ];
 
