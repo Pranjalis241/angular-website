@@ -4,6 +4,7 @@
     text-align: center;
     color: #333; /* Default color for the text */
     margin-top: 10px;
+    font-family: 'Lora', serif;
   }
   .back{
    
@@ -55,8 +56,7 @@
     background: rgb(255, 204, 211);
     background: #fdd5e6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-
+    
   }
   
   .about-header {
@@ -86,7 +86,7 @@
     font-size: 18px;
     line-height: 1.6;
     color: rgb(51, 50, 50);
-    
+   
   }
   .high{
     font-size: 24px;

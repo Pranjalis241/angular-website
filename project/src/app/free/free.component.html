@@ -1,0 +1,72 @@
+<div class="card-container">
+    <!-- Card 1 -->
+    <mat-card class="p-card">
+      <mat-card-header>
+        <div mat-card-avatar class="avatar"></div>
+        <mat-card-title >DSA in C++</mat-card-title>
+        <mat-card-subtitle style="padding: 15px;">By: Dev Sharma sir</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="\image\dsac++.png" alt="DSA in C++">
+      <mat-card-content>
+        <p>
+            Master the Coding Interview by learning Data Structures & Algorithms, which is crucial for solving complex coding problems.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button (click)="toggleFavorite(1)">
+            <mat-icon [ngClass]="{'favorite': favorites[1]}">favorite</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <!-- Card 2 -->
+    <mat-card class="p-card">
+      <mat-card-header>
+        <div mat-card-avatar class="avatar"></div>
+        <mat-card-title>Python Basics</mat-card-title>
+        <mat-card-subtitle style="padding: 15px;">By: John Doe</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="\image\python.jpg" alt="Python Basics">
+      <mat-card-content>
+        <p>
+          Learn Python programming from scratch. This course is perfect for beginners and covers all the fundamental concepts.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button (click)="toggleFavorite(2)">
+            <mat-icon [ngClass]="{'favorite': favorites[2]}">favorite</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <!-- Card 3 -->
+    <mat-card class="p-card">
+      <mat-card-header>
+       
+        <mat-card-title>   Web  Development</mat-card-title>
+        <mat-card-subtitle style="padding: 15px;">By: Jane Smith</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="\image\web1.jpg" alt="Web Development">
+      <mat-card-content>
+        <p>
+          Dive into the world of web development with this hands-on course. Learn to build stunning websites using modern tools.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button (click)="toggleFavorite(3)">
+            <mat-icon [ngClass]="{'favorite': favorites[3]}">favorite</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
+  

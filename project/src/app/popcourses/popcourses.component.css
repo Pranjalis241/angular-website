@@ -4,12 +4,29 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
-    
+    font-family: 'Lora', serif;
 }
 
 main {
-    padding: 25px;
+    padding: 0px;
+   font-family: 'Merriweather', serif;
+   
 }
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 30px;  /* Add padding around the container */
+}
+mat-form-field {
+    
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
 
 .course-grid {
     display: grid;
@@ -41,6 +58,8 @@ main {
 .course-card h2 {
     color: #002855;
     margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+   
 }
 
 .course-card p {

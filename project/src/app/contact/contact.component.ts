@@ -15,11 +15,11 @@ export class ContactComponent {
     message: '',
   };
 
-  onSubmit(contactForm: any) {
-    if (contactForm.valid) {
-      console.log('Form Submitted', this.contact);
+  onSubmit(form: any) {
+    if (form.valid) {
+      console.log('Form Submitted', form.value);
       alert('Thank you for your message!');
-      contactForm.reset();
+      form.reset();
     }
   }
 }

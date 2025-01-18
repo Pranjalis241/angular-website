@@ -1,0 +1,36 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-evenly;
+    margin: 50px 0;   /*  50px → Applies to top and bottom,
+                           0 → Applies to left and right.  */
+  }
+  
+  .p-card {
+    width: 300px;
+    margin: 8px;
+  }
+  
+  mat-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  mat-card img {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  mat-card-title{
+    font-weight: bold;
+    font-size:30px; 
+    padding-top:12px;
+  }
+
+ 
+  .favorite {
+    color: red;
+  }
+  
+  
