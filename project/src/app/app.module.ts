@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CoursesComponent } from './courses/courses.component';
-import { RegformComponent } from './regform/regform.component';
+// import { RegformComponent } from './regform/regform.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,12 +20,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MaterialModule } from './shared/material/material.module';
 import { FreeComponent } from './free/free.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { InstructorsComponent } from './instructors/instructors.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CoursesComponent,
-    RegformComponent,
+    // RegformComponent,
     ContactComponent,
     NavbarComponent,
     HeaderComponent,
@@ -35,6 +36,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     SignupComponent,
     LoginComponent,
     FreeComponent,
+    InstructorsComponent,
     
   ],
   imports: [

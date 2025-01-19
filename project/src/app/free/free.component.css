@@ -1,9 +1,10 @@
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     justify-content: space-evenly;
-    margin: 50px 0;   /*  50px → Applies to top and bottom,
+    margin: 20px 0;   /*  50px → Applies to top and bottom,
                            0 → Applies to left and right.  */
   }
   
@@ -26,8 +27,13 @@
     font-weight: bold;
     font-size:30px; 
     padding-top:12px;
+    font-family: lora;
   }
-
+ 
+  mat-card-content{
+    padding: 20px;
+    font-family: "Merriweather", serif;
+  }
  
   .favorite {
     color: red;

@@ -46,3 +46,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional box shadow */
 }
 
+.dropdown-menu .dropdown-item {
+  text-decoration: none; /* Remove underline or other decorations */
+  padding: 8px 15px; /* Ensure consistent padding */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: transparent; /* Highlight background on hover */
+  color: blue; /* Change text color */
+  text-decoration: none; /* Keep underline or other decorations off */
+  box-shadow: none; /* Ensure no extra shadow */
+}
