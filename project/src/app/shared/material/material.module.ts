@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
 import { MatButtonModule } from '@angular/material/button'; // If you use buttons
 import { MatIconModule } from '@angular/material/icon'; // If you use icons
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
   declarations: [],
@@ -22,6 +22,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatIconModule,
     MatGridListModule,  
+    MatBadgeModule 
   ],
   exports: [
     CommonModule,
@@ -33,6 +34,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatIconModule,
     MatGridListModule,  
+    MatBadgeModule 
   ]
 })
 export class MaterialModule {

@@ -39,4 +39,7 @@
     color: red;
   }
   
-  
+  /* Thumb active class for red color */
+.thumb-active mat-icon {
+  color: red;
+}

@@ -12,13 +12,13 @@ export class InstructorsComponent {
   teachers = [
     {
       name: 'John Carter',
-      role: 'Digital Marketer',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      role: 'Data Science ',
+      description: 'An experienced data scientist with Ph.D. in Computer Science',
       image: '/image/man.jpg'
     },
     {
       name: 'Sophie Moore',
-      role: 'UI/UX Designer',
+      role: 'DSA Specialist',
       description: 'Ut et turpis et pellentesque, sollicitudin malesuada.',
       image: '/image/rahul_.jpg'
     },
