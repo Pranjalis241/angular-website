@@ -23,7 +23,7 @@ export class SignupComponent {
       email: ['', [Validators.required, Validators.email]],
       dob: ['', Validators.required],
       // phone: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
-      role: ['', Validators.required],
+      // role: ['', Validators.required],
       phone: [
         '',
         [        

@@ -14,10 +14,16 @@
   }
   
   mat-card {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow on all sides */
     border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
+  mat-card:hover {
+    transform: translateY(-5px); /* Adds lift effect on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+
   mat-card img {
     height: 150px;
     object-fit: cover;
