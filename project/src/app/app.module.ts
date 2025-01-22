@@ -55,6 +55,7 @@ import { DataService } from './data.service';
   providers: [
     DataService,
     provideAnimationsAsync()
+    
   ],
   bootstrap: [AppComponent]
 })

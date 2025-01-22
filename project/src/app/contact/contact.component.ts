@@ -19,7 +19,7 @@ export class ContactComponent {
 
   onSubmit() {
     this.dataService.addItem(this.contact).subscribe(response => {
-      console.log('Registration Data added:', response);
+      console.log('Contact Data added:', response);
       this.userData = response; // Store the submitted user's data
       this.contact = { name: '', email: '', message: '' }; // Reset the form
     });

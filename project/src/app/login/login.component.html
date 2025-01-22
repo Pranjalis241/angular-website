@@ -76,6 +76,10 @@
     <br />
       <p>Don't have an account? <a href="/signup">Signup here</a></p>
     </form>
+    <!-- Display Login Message -->
+<div *ngIf="loginMessage" class="alert alert-info mt-3">
+  {{ loginMessage }}
+</div>
  </div>
  </div> 
 </div>

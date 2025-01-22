@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Amit",
+      "email": "amit@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "name": "Abhi",
+      "email": "abhi@example.com",
+      "password": "password456"
+    },
+    {
+      "id": "a8f0",
+      "name": "rajaaa",
+      "email": "raj@gmail.com",
+      "dob": "2025-01-10",
+      "phone": "6786666666",
+      "password": "raj1234",
+      "confirmPassword": "raj1234",
+      "terms": true
+    },
+    {
+      "id": "2b3b",
+      "name": "priya",
+      "email": "priya@g.com",
+      "dob": "2025-01-29",
+      "phone": "5675432222",
+      "password": "priyaa",
+      "confirmPassword": "priyaa",
+      "terms": true
+    },
+    {
+      "id": "b05e",
+      "name": "Ashaa",
+      "email": "ash@gmail.com",
+      "dob": "2006-01-31",
+      "phone": "6754889766",
+      "password": "ash56@",
+      "confirmPassword": "ash56@",
+      "terms": true
+    }
+  ],
+  "contacts": [
+    {
+      "id": "d30e",
+      "name": "Amit",
+      "email": "amit@example.com",
+      "message": "Hello"
+    },
+    {
+      "id": "6043",
+      "name": "Abhi",
+      "email": "abhi@example.com",
+      "message": "Hi there"
+    },
+    {
+      "id": "fc56",
+      "name": "harsh",
+      "email": "harsh@gmail.com",
+      "message": "ha"
+    },
+    {
+      "id": "a49e",
+      "name": "Priya",
+      "email": "pp@gmail.com",
+      "message": "Haaaaaa"
+    },
+    {
+      "id": "02ec",
+      "name": "riya",
+      "email": "riya@gmail.com",
+      "message": "i m riya singh"
+    }
+  ]
+}
