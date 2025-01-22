@@ -21,6 +21,10 @@ import { MaterialModule } from './shared/material/material.module';
 import { FreeComponent } from './free/free.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { InstructorsComponent } from './instructors/instructors.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,8 +50,10 @@ import { InstructorsComponent } from './instructors/instructors.component';
     ReactiveFormsModule,
     MaterialModule,
     MatGridListModule,
+      HttpClientModule
   ],
   providers: [
+    DataService,
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
