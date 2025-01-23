@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../data.service';  //import service file
 
 @Component({
   selector: 'app-contact',
@@ -16,11 +16,12 @@ export class ContactComponent {
   userData: any = null; // To store the submitted user's data
 
   constructor(private dataService: DataService) {}
-
+  successMessage: string = ''; // Add this property to store the success message.
   onSubmit() {
     this.dataService.addItem(this.contact).subscribe(response => {
       console.log('Contact Data added:', response);
       this.userData = response; // Store the submitted user's data
+      this.successMessage = 'Your message has been sent successfully!';
       this.contact = { name: '', email: '', message: '' }; // Reset the form
     });
   }

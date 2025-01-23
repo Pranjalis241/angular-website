@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DataService } from '../data.service'; 
+import { DataService } from '../data.service'; //import service
  
 @Component({
   selector: 'app-signup',
@@ -49,11 +49,13 @@ export class SignupComponent {
     };
   }
 
+  successMessage: string = ''; // Add this property to store the success message.
   onSubmit() {
     if (this.signupForm.valid) {
       console.log('Form Submitted!', this.signupForm.value);
       this.dataService.addUser(this.signupForm.value).subscribe(response => {
         console.log('User added:', response);
+        this.successMessage = 'Thank you for signing up!';
         // this.router.navigate(['/login']);  // Redirect to login after signup
       });
     }

@@ -8,25 +8,11 @@ header {
 }
 
 main {
-    padding: 0px;
+    padding-top: 38px;
    font-family: 'Merriweather', serif;
-   
+  
 }
 
-.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding-top: 30px;  /* Add padding around the container */
-}
-mat-form-field {
-    
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
 
 .course-grid {
     display: grid;
@@ -86,7 +72,7 @@ mat-form-field {
 
 .explore-button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .explore-button {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { DataService } from '../data.service'; //import service
+ 
 @Component({
   selector: 'app-free',
   standalone: false,
@@ -7,22 +8,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./free.component.css'], // Fixed property name
 })
 export class FreeComponent {
+  courses: any[] = [];
   ratings: number[] = [50, 45, 60]; // Initial ratings for each card
   thumbStates: boolean[] = [false, false, false]; // Track if thumb is active for each card
   favorites: boolean[] = [false, false, false]; // Track favorite state for each card
 
-  // Toggle thumb and update rating
-  toggleThumb(index: number) {
+  
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.dataService.getCourses().subscribe((data) => {
+      this.courses = data;
+    });
+  }
+
+  toggleThumb(index: number): void {
     this.thumbStates[index] = !this.thumbStates[index];
     if (this.thumbStates[index]) {
-      this.ratings[index]++; // Increment rating if activated
+      this.ratings[index]++;
     } else {
-      this.ratings[index]--; // Decrement rating if deactivated
+      this.ratings[index]--;
     }
   }
 
-  // Toggle favorite state
-  toggleFavorite(index: number) {
+  toggleFavorite(index: number): void {
     this.favorites[index] = !this.favorites[index];
   }
 }

@@ -20,7 +20,7 @@ export class DataService {
     return this.http.get<any>(this.apiUrl);
   }
 
-  // Method to add a new user
+  // Method to add a new user who subscribe
   addUser(user: any): Observable<any> {
     return this.http.post<any>(this.usersUrl, user);
   }
@@ -29,4 +29,13 @@ export class DataService {
   getUsers(): Observable<any> {
     return this.http.get<any>(this.usersUrl);
   }
+
+  getCourses(): Observable<any> {
+    return this.http.get<any>('http://localhost:3000/courses');
+  }
+
+  getAllCourses(): Observable<any> {
+    return this.http.get<any>('http://localhost:3000/allcourses');
+  }
+  
 }

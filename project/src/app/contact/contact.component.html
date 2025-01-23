@@ -117,7 +117,10 @@
             >
           </div>
         </div>
-
+        <!-- add message when form submit -->
+        <div *ngIf="successMessage" class="alert alert-success">
+          {{ successMessage }}
+        </div>
         <!-- Submit Button -->
         <button
           type="submit"

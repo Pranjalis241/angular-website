@@ -1,3 +1,4 @@
+
 .required {
   color: red;
 }
@@ -11,7 +12,7 @@
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 120px auto 0; /* Adjust the top margin to push the form down */
   padding: 30px;
  
@@ -21,7 +22,6 @@
   margin-bottom: 30px;
  /* background-image: url("/image/bg8.jpg"); */
  background-image: linear-gradient(to bottom, #d2f1f7, #facdf2, #d8f4fa);
- 
 }
 
 h1 {

@@ -208,7 +208,9 @@
         You must agree to the terms and conditions.
       </div>
     </div>
-
+    <div *ngIf="successMessage" class="alert alert-success">
+      {{ successMessage }}
+    </div>
     <button type="submit" [disabled]="signupForm.pristine || signupForm.invalid" class="btn btn-success">
       Sign Up
     </button>
