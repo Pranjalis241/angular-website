@@ -1,17 +1,6 @@
 {
   "users": [
     {
-      "id": "1d55",
-      "name": "Aman Singh",
-      "email": "aman@gmail.com",
-      "dob": "2025-01-04",
-      "role": "guest",
-      "phone": "8975555555",
-      "password": "harshh",
-      "confirmPassword": "harshh",
-      "terms": true
-    },
-    {
       "id": "638a",
       "name": "karan",
       "email": "k@gmail.com",
@@ -23,17 +12,6 @@
       "terms": true
     },
     {
-      "id": "73f3",
-      "name": "Raj sharma",
-      "email": "raj@gmail.com",
-      "dob": "2006-03-01",
-      "role": "guest",
-      "phone": "7897655438",
-      "password": "123456raj",
-      "confirmPassword": "123456raj",
-      "terms": true
-    },
-    {
       "id": "d4c0",
       "name": "Abhinav",
       "email": "abhi@gm.com",
@@ -42,6 +20,28 @@
       "phone": "6786533332",
       "password": "abhi567",
       "confirmPassword": "abhi567",
+      "terms": true
+    },
+    {
+      "id": "7428",
+      "name": "Pranjali",
+      "email": "p@g.com",
+      "dob": "2025-01-11",
+      "role": "trainer",
+      "phone": "7868999999",
+      "password": "trainer",
+      "confirmPassword": "trainer",
+      "terms": true
+    },
+    {
+      "id": "f96c",
+      "name": "newuser",
+      "email": "user@gmail.com",
+      "dob": "2025-02-08",
+      "role": "user",
+      "phone": "7897654444",
+      "password": "userss",
+      "confirmPassword": "userss",
       "terms": true
     }
   ],

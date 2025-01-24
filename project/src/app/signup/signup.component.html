@@ -151,7 +151,7 @@
       <select class="form-control" formControlName="role">
         <option value="">Select a role</option>
         <option value="user">User</option>
-        <option value="guest">Trainer</option>
+        <option value="trainer">Trainer</option>
       </select>
     </div>
     <div *ngIf="signupForm.controls['role'].invalid && (signupForm.controls['role'].dirty || signupForm.controls['role'].touched)" class="alert alert-danger">

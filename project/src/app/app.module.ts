@@ -23,6 +23,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { InstructorsComponent } from './instructors/instructors.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './data.service';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { TrainerDashboardComponent } from './trainer-dashboard/trainer-dashboard.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -41,6 +44,9 @@ import { DataService } from './data.service';
     LoginComponent,
     FreeComponent,
     InstructorsComponent,
+    UserDashboardComponent,
+    TrainerDashboardComponent,
+    FaqComponent,
     
   ],
   imports: [

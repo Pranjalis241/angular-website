@@ -7,7 +7,10 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { FreeComponent } from './free/free.component';
 import { InstructorsComponent } from './instructors/instructors.component';
-
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { TrainerDashboardComponent } from './trainer-dashboard/trainer-dashboard.component';
+import { AuthGuard } from './auth.guard';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
@@ -19,6 +22,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {path: 'free' , component: FreeComponent},
   {path: 'instructors' , component: InstructorsComponent},
+  { path: 'user-dashboard', component: UserDashboardComponent, canActivate: [AuthGuard] }, // Protect with AuthGuard
+  { path: 'trainer-dashboard', component: TrainerDashboardComponent },
+  { path:'faq', component:FaqComponent}
 
   // { path: '**', redirectTo: '/home' } 
 ];
