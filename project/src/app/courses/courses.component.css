@@ -41,3 +41,12 @@
   input::placeholder {
     color: #3b3a3a; /* Change this to your desired placeholder color */
   }
+  .price-box {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }

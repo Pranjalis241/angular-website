@@ -24,6 +24,8 @@
             <h5 class="card-title">{{ course.title }}</h5>
             <img [src]="course.image" class="card-img-top" alt="{{ course.title }}">
             <p class="card-text">{{ course.description }}</p>
+            <div class="price-box">{{ course.price }}</div>
+            <p class="card-text"><strong>Instructor:</strong> {{ course.teacher }}</p>
           </div>
         </div>
       </div>

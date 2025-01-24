@@ -1,73 +1,47 @@
 {
   "users": [
     {
-      "id": "2b3b",
-      "name": "priya",
-      "email": "priya@g.com",
-      "dob": "2025-01-29",
-      "phone": "5675432222",
-      "password": "priyaa",
-      "confirmPassword": "priyaa",
-      "terms": true
-    },
-    {
-      "id": "36ad",
-      "name": "Aman singh",
+      "id": "1d55",
+      "name": "Aman Singh",
       "email": "aman@gmail.com",
-      "dob": "2025-01-03",
-      "phone": "6777778899",
-      "password": "amansi",
-      "confirmPassword": "amansi",
+      "dob": "2025-01-04",
+      "role": "guest",
+      "phone": "8975555555",
+      "password": "harshh",
+      "confirmPassword": "harshh",
       "terms": true
     },
     {
-      "id": "5923",
-      "name": "jack si",
-      "email": "jack@gmail.com",
-      "dob": "2025-01-16",
-      "phone": "8766666666",
-      "password": "jack123",
-      "confirmPassword": "jack123",
+      "id": "638a",
+      "name": "karan",
+      "email": "k@gmail.com",
+      "dob": "2025-01-02",
+      "role": "user",
+      "phone": "",
+      "password": "karan1",
+      "confirmPassword": "karan1",
       "terms": true
     },
     {
-      "id": "f0a7",
-      "name": "jack si",
-      "email": "jack@gmail.com",
-      "dob": "2025-01-16",
-      "phone": "8766666666",
-      "password": "jack123",
-      "confirmPassword": "jack123",
+      "id": "73f3",
+      "name": "Raj sharma",
+      "email": "raj@gmail.com",
+      "dob": "2006-03-01",
+      "role": "guest",
+      "phone": "7897655438",
+      "password": "123456raj",
+      "confirmPassword": "123456raj",
       "terms": true
     },
     {
-      "id": "315f",
-      "name": "jack si",
-      "email": "jack@gmail.com",
-      "dob": "2025-01-16",
-      "phone": "8766666666",
-      "password": "jack123",
-      "confirmPassword": "jack123",
-      "terms": true
-    },
-    {
-      "id": "53dc",
-      "name": "jack si",
-      "email": "jack@gmail.com",
-      "dob": "2025-01-16",
-      "phone": "8766666666",
-      "password": "jack123",
-      "confirmPassword": "jack123",
-      "terms": true
-    },
-    {
-      "id": "95ed",
-      "name": "jack s",
-      "email": "j@gmail.com",
-      "dob": "2025-01-03",
-      "phone": "7655555555",
-      "password": "jack12",
-      "confirmPassword": "jack12",
+      "id": "d4c0",
+      "name": "Abhinav",
+      "email": "abhi@gm.com",
+      "dob": "2002-04-30",
+      "role": "user",
+      "phone": "6786533332",
+      "password": "abhi567",
+      "confirmPassword": "abhi567",
       "terms": true
     }
   ],
@@ -115,31 +89,53 @@
     }
   ],
   "allcourses": [
-    { "id": 1, 
-      "title": "Artificial Intelligence", 
-      "description": " Explore the fundamentals of artificial intelligence, including machine learning, natural language processing, and practical applications in various industries.", 
-      "image": "\\image\\gen.jpg" 
+    {
+      "id": 1,
+      "title": "Artificial Intelligence",
+      "description": " Explore the fundamentals of artificial intelligence, including machine learning, natural language processing, and practical applications in various industries.",
+      "image": "\\image\\gen.jpg",
+      "price": "$100",
+      "teacher": "John Doe"
     },
-    { "id": 2, "title": "Cloud Computing", 
-      "description": "Learn about cloud computing concepts and services like AWS, Azure, and Google Cloud,along with hands-on experience in cloud-based application.", 
-      "image": "\\image\\cloud.jpg" 
+    {
+      "id": 2,
+      "title": "Cloud Computing",
+      "description": "Learn about cloud computing concepts and services like AWS, Azure, and Google Cloud,along with hands-on experience in cloud-based application.",
+      "image": "\\image\\cloud.jpg",
+      "price": "$120",
+      "teacher": "Jane Smith"
     },
-    { "id": 3, "title": "Machine Learning", 
-      "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.", 
-      "image": "\\image\\machine.jpg"
+    {
+      "id": 3,
+      "title": "Machine Learning",
+      "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.",
+      "image": "\\image\\machine.jpg",
+      "price": "$150",
+      "teacher": "Alice Johnson"
     },
-    { "id": 4, "title": "Cybersecurity", 
-      "description": " Learn the basics of cybersecurity and how to protect systems and data from cyber threats by learning cryptography, network security, and risk management.", 
-      "image": "\\image\\cs.jpeg" 
+    {
+      "id": 4,
+      "title": "Cybersecurity",
+      "description": " Learn the basics of cybersecurity and how to protect systems and data from cyber threats by learning cryptography, network security, and risk management.",
+      "image": "\\image\\cs.jpeg",
+      "price": "$200",
+      "teacher": "Bob Brown"
     },
-    { "id": 5, "title": "Data Analytics", 
-      "description": " Learn how to analyze and interpret large datasets. This course covers data mining, data visualization, and big data technologies like Hadoop and Spark", 
-      "image": "\\image\\data.jpg" 
+    {
+      "id": 5,
+      "title": "Data Analytics",
+      "description": " Learn how to analyze and interpret large datasets. This course covers data mining, data visualization, and big data technologies like Hadoop and Spark",
+      "image": "\\image\\data.jpg",
+      "price": "$180",
+      "teacher": "Charlie Davis"
     },
-    { "id": 6, "title": "Computer Networks", 
-      "description": "Gain a comprehensive understanding of computer networks, including network architecture using TCP/IP, wireless networks, and network troubleshooting.", 
-      "image": "\\image\\cn.webp" 
+    {
+      "id": 6,
+      "title": "Computer Networks",
+      "description": "Gain a comprehensive understanding of computer networks, including network architecture using TCP/IP, wireless networks, and network troubleshooting.",
+      "image": "\\image\\cn.webp",
+      "price": "$220",
+      "teacher": "Diana Evans"
     }
   ]
-
 }

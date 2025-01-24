@@ -23,6 +23,7 @@ export class SignupComponent {
         name: ['', [Validators.required, Validators.minLength(5)]],
         email: ['', [Validators.required, Validators.email]],
         dob: ['', Validators.required],
+        role:['', Validators.required],
         phone: ['', [Validators.pattern(/^\d{10}$/)]],
         password: ['', [Validators.required, Validators.minLength(6)]],
         confirmPassword: ['', Validators.required],
