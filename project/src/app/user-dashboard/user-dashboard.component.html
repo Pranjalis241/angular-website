@@ -1,8 +1,39 @@
-<div class="user-info" *ngIf="user">
-    <h2>User Details</h2>
-    <p><strong>Name:</strong> {{ user.name }}</p>
-    <p><strong>Email:</strong> {{ user.email }}</p>
-    <p><strong>Phone:</strong> {{ user.phone || 'Not Provided' }}</p>
-    <p><strong>Role:</strong> {{ user.role }}</p>
-  </div>
+<!-- <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="card p-3 shadow" style="max-width: 600px; width: 100%;">
+   
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Apply the Google Font to <p> elements */
+    p {
+      font-family: 'lora', sans-serif;
+      font-size: 19px; /* Adjust font size if needed */
+      color: #333; /* Dark text color for readability */
+    }
+  </style>
+  <body>
+    <div class="container mt-4 d-flex justify-content-center">
+      <div class="card p-3 shadow" style="max-width: 600px; width: 100%;">
+        <!-- Center the title -->
+       
+        <h1 class="text-center mb-4 fw-bold" style="font-family:lora">
+          <span class="text-primary">User Details</span>
+        </h1>
+        <div class="row align-items-center">
+          <!-- Image on the left -->
+          <div class="col-5 text-center">
+            <img src="\image\user.jpg" alt="user" class="img-fluid rounded-circle" />
+          </div>
+          <!-- Details on the right with added offset -->
+          <div class="col-7 ps-5">
+            <p><strong>Name:</strong> {{ user.name }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Phone:</strong> {{ user.phone || "Not Provided" }}</p>
+            <p><strong>Role:</strong> {{ user.role }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
   
