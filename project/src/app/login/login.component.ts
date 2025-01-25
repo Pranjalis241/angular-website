@@ -30,25 +30,25 @@ export class LoginComponent {
     if (this.loginForm.valid) {
       const { email, password } = this.loginForm.value;
 
-      // Fetch users and check credentials
-      this.dataService.getUsers().subscribe(users => {
-        const user = users.find((u: any) => u.email === email && u.password === password);
+      // Use the login method from DataService to authenticate the user
+      this.dataService.login(email, password).subscribe(
+        (user) => {
+          // Successful login
+          this.loginMessage = 'Login successful!';
 
-        if (user) {
-           this.loginMessage = 'Login successful!';
-            // Store user email in localStorage
-            localStorage.setItem('userEmail', user.email); // To track login session
-            localStorage.setItem('userRole', user.role); 
           // Redirect based on role
           if (user.role === 'user') {
             this.router.navigate(['/user-dashboard']);
           } else if (user.role === 'trainer') {
             this.router.navigate(['/trainer-dashboard']);
           }
-        } else {
+        },
+        (error) => {
+          // Handle login failure
           this.loginMessage = 'Invalid credentials!';
+          console.error(error);
         }
-      });
+      );
     } else {
       console.error('Form is invalid');
     }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { Chart } from 'chart.js/auto';
 import { Router } from '@angular/router';
 import { DataService } from '../data.service'; // Import the DataService
@@ -9,15 +9,18 @@ import { DataService } from '../data.service'; // Import the DataService
   templateUrl: './user-dashboard.component.html',
   styleUrls: ['./user-dashboard.component.css']
 })
-export class UserDashboardComponent implements OnInit {
+export class UserDashboardComponent  implements AfterViewInit{
   user: any; // To store the logged-in user's details
- 
+  @ViewChild('chartCanvas') chartCanvas!: ElementRef;
   constructor(private dataService: DataService, private router: Router) {}
-
   ngOnInit(): void {
     this.loadUserData();
-  
   }
+
+  ngAfterViewInit(): void {
+    this.renderChart(); // Call renderChart after the view has been initialized
+  }
+
 
   loadUserData() {
     const userEmail = localStorage.getItem('userEmail'); // Assuming email is stored during login
@@ -41,5 +44,28 @@ export class UserDashboardComponent implements OnInit {
     }
   }
 
- 
+  renderChart(): void {
+    const ctx = this.chartCanvas.nativeElement.getContext('2d');
+
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Completed', 'In Progress', 'Pending'],
+        datasets: [
+          {
+            data: [60, 25, 15], // Replace with dynamic values if needed
+            backgroundColor: ['#4CAF50', '#FFC107', '#F44336'],
+          },
+        ],
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: true,
+            position: 'bottom',
+          },
+        },
+      },
+    });
+  }
 }

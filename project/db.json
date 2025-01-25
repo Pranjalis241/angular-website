@@ -2,25 +2,40 @@
   "users": [
     {
       "id": "638a",
-      "name": "karan",
+      "name": "Karan",
       "email": "k@gmail.com",
       "dob": "2025-01-02",
       "role": "user",
       "phone": "",
       "password": "karan1",
       "confirmPassword": "karan1",
-      "terms": true
-    },
-    {
-      "id": "d4c0",
-      "name": "Abhinav",
-      "email": "abhi@gm.com",
-      "dob": "2002-04-30",
-      "role": "user",
-      "phone": "6786533332",
-      "password": "abhi567",
-      "confirmPassword": "abhi567",
-      "terms": true
+      "terms": true,
+      "courses": [
+        {
+          "id": "2",
+          "title": "Cloud Computing",
+          "description": "Learn about cloud computing concepts and services like AWS, Azure, and Google Cloud,along with hands-on experience in cloud-based application.",
+          "image": "\\image\\cloud.jpg",
+          "price": "$120",
+          "teacher": "Jane Smith"
+        },
+        {
+          "id": "3",
+          "title": "Machine Learning",
+          "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.",
+          "image": "\\image\\machine.jpg",
+          "price": "$150",
+          "teacher": "Alice Johnson"
+        },
+        {
+          "id": "5",
+          "title": "Data Analytics",
+          "description": " Learn how to analyze and interpret large datasets. This course covers data mining, data visualization, and big data technologies like Hadoop and Spark",
+          "image": "\\image\\data.jpg",
+          "price": "$180",
+          "teacher": "Charlie Davis"
+        }
+      ]
     },
     {
       "id": "7428",
@@ -35,14 +50,45 @@
     },
     {
       "id": "f96c",
-      "name": "newuser",
+      "name": "Naman",
       "email": "user@gmail.com",
       "dob": "2025-02-08",
       "role": "user",
       "phone": "7897654444",
       "password": "userss",
       "confirmPassword": "userss",
-      "terms": true
+      "terms": true,
+      "courses": [
+        {
+          "id": "4",
+          "title": "Cybersecurity",
+          "description": " Learn the basics of cybersecurity and how to protect systems and data from cyber threats by learning cryptography, network security, and risk management.",
+          "image": "\\image\\cs.jpeg",
+          "price": "$200",
+          "teacher": "Bob Brown"
+        }
+      ]
+    },
+    {
+      "id": "522f",
+      "name": "Vidhi",
+      "email": "v@g.cm",
+      "dob": "2025-01-11",
+      "role": "user",
+      "phone": "8989898999",
+      "password": "vidhi1",
+      "confirmPassword": "vidhi1",
+      "terms": true,
+      "courses": [
+        {
+          "id": "3",
+          "title": "Machine Learning",
+          "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.",
+          "image": "\\image\\machine.jpg",
+          "price": "$150",
+          "teacher": "Alice Johnson"
+        }
+      ]
     }
   ],
   "contacts": [
@@ -90,7 +136,7 @@
   ],
   "allcourses": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Artificial Intelligence",
       "description": " Explore the fundamentals of artificial intelligence, including machine learning, natural language processing, and practical applications in various industries.",
       "image": "\\image\\gen.jpg",
@@ -98,7 +144,7 @@
       "teacher": "John Doe"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Cloud Computing",
       "description": "Learn about cloud computing concepts and services like AWS, Azure, and Google Cloud,along with hands-on experience in cloud-based application.",
       "image": "\\image\\cloud.jpg",
@@ -106,7 +152,7 @@
       "teacher": "Jane Smith"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Machine Learning",
       "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.",
       "image": "\\image\\machine.jpg",
@@ -114,7 +160,7 @@
       "teacher": "Alice Johnson"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Cybersecurity",
       "description": " Learn the basics of cybersecurity and how to protect systems and data from cyber threats by learning cryptography, network security, and risk management.",
       "image": "\\image\\cs.jpeg",
@@ -122,7 +168,7 @@
       "teacher": "Bob Brown"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Data Analytics",
       "description": " Learn how to analyze and interpret large datasets. This course covers data mining, data visualization, and big data technologies like Hadoop and Spark",
       "image": "\\image\\data.jpg",
@@ -130,7 +176,7 @@
       "teacher": "Charlie Davis"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Computer Networks",
       "description": "Gain a comprehensive understanding of computer networks, including network architecture using TCP/IP, wireless networks, and network troubleshooting.",
       "image": "\\image\\cn.webp",

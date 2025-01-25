@@ -26,4 +26,27 @@ export class CoursesComponent  {
       course.title.toLowerCase().includes(this.searchQuery.toLowerCase())
     );
   }
-}
+  enrollInCourse(course: any) {
+    const userEmail = localStorage.getItem('userEmail');  // Get the logged-in user's email
+    if (userEmail) {
+      this.dataService.getUsers().subscribe((users) => {
+        const user = users.find((u: any) => u.email === userEmail);
+        if (user) {
+          // Add the selected course to the user's enrolled courses
+          this.dataService.updateUserCourses(user.id, course).subscribe(
+            () => {
+              alert('Successfully enrolled in the course!');
+            },
+            (error) => {
+              console.error('Error enrolling in course:', error);
+              alert('Failed to enroll in course');
+            }
+          );
+        }
+      });
+    } else {
+      alert('Please log in first');
+    }
+  }
+  
+ }

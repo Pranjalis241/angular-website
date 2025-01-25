@@ -33,6 +33,11 @@
 
 <!-- Logout Button -->
 <button *ngIf="isLoggedIn()" class="btn btn-outline-danger" (click)="logout()" style="background-color: rgb(218, 39, 241); color: aliceblue;">Logout</button>
+
+<!-- Conditional dashboard buttons based on role -->
+<button *ngIf="isLoggedIn() && getUserRole() === 'user'" class="btn btn-outline-info" routerLink="/user-dashboard" style="background-color: rgb(0, 123, 255); color: white;">User Dashboard</button>
+
+<button *ngIf="isLoggedIn() && getUserRole() === 'trainer'" class="btn btn-outline-info" routerLink="/trainer-dashboard" style="background-color: rgb(0, 123, 255); color: white;">Trainer Dashboard</button>
  </div>
   </div>
 </nav>

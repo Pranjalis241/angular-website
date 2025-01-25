@@ -13,13 +13,18 @@ export class NavbarComponent {
 
   // Check if the user is logged in
   isLoggedIn(): boolean {
-    return !!localStorage.getItem('userEmail'); // Returns true if userEmail exists in localStorage
+    return !!localStorage.getItem('userEmail'); // Checks if email exists in localStorage
+  }
+
+  // Get the user role from localStorage
+  getUserRole(): string {
+    return localStorage.getItem('userRole') || '';  // Returns role (user/trainer) from localStorage
   }
 
   // Handle logout
   logout(): void {
     localStorage.removeItem('userEmail');
     localStorage.removeItem('userRole');
-    this.router.navigate(['/home']); // Redirect to home page
+    this.router.navigate(['/home']); // Redirect to home page after logout
   }
 }
