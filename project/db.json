@@ -34,6 +34,14 @@
           "image": "\\image\\data.jpg",
           "price": "$180",
           "teacher": "Charlie Davis"
+        },
+        {
+          "id": "3",
+          "title": "Machine Learning",
+          "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.",
+          "image": "\\image\\machine.jpg",
+          "price": "$150",
+          "teacher": "Alice Johnson"
         }
       ]
     },
@@ -46,7 +54,8 @@
       "phone": "7868999999",
       "password": "trainer",
       "confirmPassword": "trainer",
-      "terms": true
+      "terms": true,
+      "courses": []
     },
     {
       "id": "f96c",
@@ -87,6 +96,38 @@
           "image": "\\image\\machine.jpg",
           "price": "$150",
           "teacher": "Alice Johnson"
+        }
+      ]
+    },
+    {
+      "id": "4b45",
+      "name": "Jiyaa",
+      "email": "j@gmail.com",
+      "dob": "2025-01-01",
+      "role": "trainer",
+      "phone": "6543267777",
+      "password": "jiyaaa",
+      "confirmPassword": "jiyaaa",
+      "terms": true
+    },
+    {
+      "id": "3026",
+      "name": "Aditya",
+      "email": "adi@g.com",
+      "dob": "2024-12-30",
+      "role": "trainer",
+      "phone": "6767674444",
+      "password": "train12",
+      "confirmPassword": "train12",
+      "terms": true,
+      "courses": [
+        {
+          "title": "12th class",
+          "description": "Mock test paper for practise",
+          "image": "\\image\\rahul_.jpg",
+          "price": "800",
+          "teacher": "Aditya",
+          "id": "1737912007413"
         }
       ]
     }
@@ -182,6 +223,14 @@
       "image": "\\image\\cn.webp",
       "price": "$220",
       "teacher": "Diana Evans"
+    },
+    {
+      "id": "1737912007413",
+      "title": "12th class",
+      "description": "Mock test paper for practise",
+      "image": "\\image\\rahul_.jpg",
+      "price": "800",
+      "teacher": "Aditya"
     }
   ]
 }
