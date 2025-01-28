@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';  //import service file
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-contact',
@@ -14,16 +15,49 @@ export class ContactComponent {
     message: '',
   };
   userData: any = null; // To store the submitted user's data
+  successMessage: string = ''; // To store the success message
+
+  // Replace with your Email.js credentials
+  private serviceId = 'service_xt41kta';
+  private templateId = 'template_9yirwvg';
+  private userId = 'EbX3e8V7M94yOr-lk';
 
   constructor(private dataService: DataService) {}
-  successMessage: string = ''; // Add this property to store the success message.
+
   onSubmit() {
-    this.dataService.addItem(this.contact).subscribe(response => {
-      console.log('Contact Data added:', response);
-      this.userData = response; // Store the submitted user's data
-      this.successMessage = 'Your message has been sent successfully!';
-      this.contact = { name: '', email: '', message: '' }; // Reset the form
-    });
+    // Send form data to the backend
+    this.dataService.addItem(this.contact).subscribe(
+      (response) => {
+        console.log('Contact Data added:', response);
+        this.userData = response; // Store the submitted user's data
+        this.successMessage = 'Your message has been sent successfully!';
+
+        // Email.js: Send email using the template
+        const templateParams = {
+          from_name:"Edupedia",
+          to_name: this.contact.name,
+          to_email: this.contact.email,
+          message: "Thank you for contacting us",
+        };
+
+        emailjs
+        .send(this.serviceId, this.templateId, templateParams, this.userId)
+        .then(
+          (response) => {
+            console.log('Email sent successfully!', response.status, response.text);
+          },
+          (error) => {
+            console.error('Failed to send email:', error);
+          }
+        );
+
+        // Reset the form
+        this.contact = { name: '', email: '', message: '' };
+      },
+      (error) => {
+        console.error('Error submitting data:', error);
+      }
+    );
   }
 
   onRefresh() {
