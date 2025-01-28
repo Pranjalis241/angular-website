@@ -11,6 +11,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { TrainerDashboardComponent } from './trainer-dashboard/trainer-dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { FaqComponent } from './faq/faq.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
@@ -24,8 +25,8 @@ const routes: Routes = [
   {path: 'instructors' , component: InstructorsComponent},
   { path: 'user-dashboard', component: UserDashboardComponent, canActivate: [AuthGuard] }, // Protect with AuthGuard
   { path: 'trainer-dashboard', component: TrainerDashboardComponent },
-  { path:'faq', component:FaqComponent}
-
+  { path:'faq', component:FaqComponent},
+  {path:'admin-dashboard', component:AdminDashboardComponent}
   // { path: '**', redirectTo: '/home' } 
 ];
 

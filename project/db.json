@@ -28,20 +28,12 @@
           "teacher": "Alice Johnson"
         },
         {
-          "id": "5",
-          "title": "Data Analytics",
-          "description": " Learn how to analyze and interpret large datasets. This course covers data mining, data visualization, and big data technologies like Hadoop and Spark",
-          "image": "\\image\\data.jpg",
-          "price": "$180",
-          "teacher": "Charlie Davis"
-        },
-        {
-          "id": "3",
-          "title": "Machine Learning",
-          "description": "Explore the exciting field of machine learning by learning key concepts such as supervised and unsupervised learning, neural networks, and deep learning.",
-          "image": "\\image\\machine.jpg",
-          "price": "$150",
-          "teacher": "Alice Johnson"
+          "id": "1",
+          "title": "Artificial Intelligence",
+          "description": " Explore the fundamentals of artificial intelligence, including machine learning, natural language processing, and practical applications in various industries.",
+          "image": "\\image\\gen.jpg",
+          "price": "$100",
+          "teacher": "John Doe"
         }
       ]
     },
@@ -55,12 +47,40 @@
       "password": "trainer",
       "confirmPassword": "trainer",
       "terms": true,
-      "courses": []
+      "courses": [
+        {
+          "title": "abcd",
+          "description": "haa",
+          "image": "abcd",
+          "price": "99",
+          "teacher": "Pranjali",
+          "id": "1737994015423"
+        },
+        {
+          "title": "jhgdf",
+          "description": "ghyfy",
+          "image": "abcde",
+          "price": "88",
+          "teacher": "Pranjali",
+          "id": "1737994203397"
+        }
+      ]
+    },
+    {
+      "id": "7477",
+      "name": "Shreya",
+      "email": "s@g.com",
+      "dob": "2025-01-11",
+      "role": "admin",
+      "phone": "7868765999",
+      "password": "admin12",
+      "confirmPassword": "admin12",
+      "terms": true
     },
     {
       "id": "f96c",
       "name": "Naman",
-      "email": "user@gmail.com",
+      "email": "users@gmail.com",
       "dob": "2025-02-08",
       "role": "user",
       "phone": "7897654444",
@@ -96,6 +116,14 @@
           "image": "\\image\\machine.jpg",
           "price": "$150",
           "teacher": "Alice Johnson"
+        },
+        {
+          "id": "2",
+          "title": "Cloud Computing",
+          "description": "Learn about cloud computing concepts and services like AWS, Azure, and Google Cloud,along with hands-on experience in cloud-based application.",
+          "image": "\\image\\cloud.jpg",
+          "price": "$120",
+          "teacher": "Jane Smith"
         }
       ]
     },
@@ -109,47 +137,26 @@
       "password": "jiyaaa",
       "confirmPassword": "jiyaaa",
       "terms": true
-    },
-    {
-      "id": "3026",
-      "name": "Aditya",
-      "email": "adi@g.com",
-      "dob": "2024-12-30",
-      "role": "trainer",
-      "phone": "6767674444",
-      "password": "train12",
-      "confirmPassword": "train12",
-      "terms": true,
-      "courses": [
-        {
-          "title": "12th class",
-          "description": "Mock test paper for practise",
-          "image": "\\image\\rahul_.jpg",
-          "price": "800",
-          "teacher": "Aditya",
-          "id": "1737912007413"
-        }
-      ]
     }
   ],
   "contacts": [
     {
-      "id": "d30e",
+      "id": "f969",
       "name": "Amit",
-      "email": "amit@example.com",
+      "email": "amit12@gmail.com",
       "message": "Hello"
     },
     {
-      "id": "6043",
-      "name": "Abhi",
-      "email": "abhi@example.com",
-      "message": "Hi there"
+      "id": "e3f8",
+      "name": "Jiyaa",
+      "email": "j@gmail.com",
+      "message": "hi there"
     },
     {
-      "id": "e3f8",
-      "name": "jack",
-      "email": "jack@gmail.com",
-      "message": "hiiiii"
+      "id": "4c67",
+      "name": "Jack",
+      "email": "jack@g.com",
+      "message": "Hello guys"
     }
   ],
   "courses": [
@@ -223,14 +230,6 @@
       "image": "\\image\\cn.webp",
       "price": "$220",
       "teacher": "Diana Evans"
-    },
-    {
-      "id": "1737912007413",
-      "title": "12th class",
-      "description": "Mock test paper for practise",
-      "image": "\\image\\rahul_.jpg",
-      "price": "800",
-      "teacher": "Aditya"
     }
   ]
 }

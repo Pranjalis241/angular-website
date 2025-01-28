@@ -26,6 +26,7 @@ import { DataService } from './data.service';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { TrainerDashboardComponent } from './trainer-dashboard/trainer-dashboard.component';
 import { FaqComponent } from './faq/faq.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { FaqComponent } from './faq/faq.component';
     UserDashboardComponent,
     TrainerDashboardComponent,
     FaqComponent,
+    AdminDashboardComponent,
     
   ],
   imports: [

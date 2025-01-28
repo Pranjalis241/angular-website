@@ -38,6 +38,8 @@
 <button *ngIf="isLoggedIn() && getUserRole() === 'user'" class="btn btn-outline-info" routerLink="/user-dashboard" style="background-color: rgb(0, 123, 255); color: white;">User Dashboard</button>
 
 <button *ngIf="isLoggedIn() && getUserRole() === 'trainer'" class="btn btn-outline-info" routerLink="/trainer-dashboard" style="background-color: rgb(0, 123, 255); color: white;">Trainer Dashboard</button>
+<button *ngIf="isLoggedIn() && getUserRole() === 'admin'" class="btn btn-outline-info" routerLink="/admin-dashboard" style="background-color: rgb(0, 123, 255); color: white;">Admin Dashboard</button>
+
  </div>
   </div>
 </nav>

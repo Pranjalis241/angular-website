@@ -23,7 +23,7 @@ export class TrainerDashboardComponent {
   }
 
   loadUserData() {
-    const userEmail = localStorage.getItem('userEmail'); // Assuming email is stored during login
+    const userEmail = localStorage.getItem('userEmail'); // Email is stored during login
     if (userEmail) {
       this.dataService.getUsers().subscribe(
         (users) => {

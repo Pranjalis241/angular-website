@@ -29,11 +29,21 @@ export class DataService {
     return this.http.post<any>(this.usersUrl, user);
   }
 
-  // Method to get all users
+  // Method to fetch all users
   getUsers(): Observable<any> {
     return this.http.get<any>(this.usersUrl);
   }
+  
+  deleteUser(userId: string): Observable<any> {
+    return this.http.delete(`${this.usersUrl}/${userId}`);
+  }
+  
+  updateUser(userId: string, updatedData: any): Observable<any> {
+    return this.http.put<any>(`${this.usersUrl}/${userId}`, updatedData);
 
+  }
+  
+  
   getCourses(): Observable<any> {
     return this.http.get<any>('http://localhost:3000/courses');
   }

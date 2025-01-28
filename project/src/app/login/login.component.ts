@@ -42,6 +42,9 @@ export class LoginComponent {
           } else if (user.role === 'trainer') {
             this.router.navigate(['/trainer-dashboard']);
           }
+          else if(user.role==='admin'){
+            this.router.navigate(['/admin-dashboard']);
+          }
         },
         (error) => {
           // Handle login failure
